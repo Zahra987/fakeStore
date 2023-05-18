@@ -1,0 +1,62 @@
+.nav-right ul li span {
+  font-size:0.9em;
+  padding-left: 10px;
+}
+.nav-right ul li{
+  width:100%;
+  padding: 8px 0px 8px 15px;
+}
+.nav-right ul li:hover{
+  background-color:#D3D3D3;
+}
+.header-box{
+  height: 80px;
+  background-color: #7d6fce;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.nav-left{
+  margin-left: 12px;
+  display:flex;
+}
+.nav-left .store-name{
+  margin-left: 7px;
+}
+.hamberger{
+  cursor: pointer;
+}
+.nav-right{
+  position: absolute;
+  top:80px;
+  width: 200px;
+  height: 450px;
+  background-color:#fff;
+  transform: translateX(0);
+  transition:all 0.3s linear;
+  box-shadow: 10px 10px 10px 99999px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  z-index: 9999;
+ }
+ #close-x{
+  color: red;
+  text-align: end;
+  cursor:auto;
+  font-size: 1.2em;
+ }
+ #close-x:hover{
+  background-color: inherit;
+ }
+ #close-x span{
+  padding-right: 10px;
+  display: inline-block;
+ }
+ #close-x span:hover{
+  cursor: pointer;
+  transform: scale(1.5);
+ }
+ .close{
+  transform: translateX(-100%);
+  box-shadow: none;
+}
