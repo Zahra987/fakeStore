@@ -1,0 +1,66 @@
+.footer-section1{
+  width: 100vw;
+  height:420px;
+  background-color: rgb(69, 182, 243);
+  padding-top: 50px;
+  display:flex;
+  justify-content:space-around;
+  align-items: start;
+}
+.footer-section1 li{
+  padding: 6px;
+}
+.footer-section1 .column1 ul li:hover{
+  color: rgb(221, 240, 243);
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.footer-section1 ul li:hover{
+  color: rgb(221, 240, 243);
+  transition: all 0.3s linear;
+}
+.footer-section1 li:first-child:hover{
+  color: rgb(0, 0, 0);
+  cursor: default;
+}
+.footer-section1 .column3 span{
+  padding-left: 10px;
+}
+.footer-section2{
+  width: 100vw;
+  height:110px;
+  padding: 10px 15px;
+  background-color: rgb(85, 157, 202);
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+}
+.footer-section2 h5{
+  margin-bottom: 12px;
+}
+.footer-section2 div,.footer-section2 h5{
+  text-align:center;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+ 
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ 
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+} 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .footer-section1{
+    padding-left: 230px;
+    padding-right: 230px;
+  }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

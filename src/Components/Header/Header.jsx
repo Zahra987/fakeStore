@@ -29,8 +29,8 @@ export default function Header() {
           <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"#7d6fce"}}} to='/cart'><li><AiOutlineShoppingCart/><span>CART</span></li></NavLink>
           <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"#7d6fce"}}} to='/orders'><li><AiOutlineUnorderedList/><span>ORDERS</span></li></NavLink>
           <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"#7d6fce"}}} to='/saved'><li><HiOutlineSave/><span>SAVED</span></li></NavLink>
-          <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"#7d6fce"}}} to='/aboutus'><li><FcAbout/><span>ABOUTUS</span></li></NavLink>
-          <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"#7d6fce"}}} to='/contactus'><li><MdConnectWithoutContact/><span>CONTACTUS</span></li></NavLink>
+          <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"#7d6fce"}}} to='/aboutus'><li className='aboutus-li'><FcAbout/><span>ABOUTUS</span></li></NavLink>
+          <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"#7d6fce"}}} to='/contactus'><li className='contactus-li'><MdConnectWithoutContact/><span>CONTACTUS</span></li></NavLink>
           <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"#7d6fce"}}} to='/login'><li><MdLogin/><span>LOGIN</span></li></NavLink>
         </ul>
       </nav>

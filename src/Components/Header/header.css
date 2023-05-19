@@ -71,9 +71,15 @@
     justify-content:center;
     align-items:center;
     height:80px;
-    min-width: 80px;
+    min-width: 60px;
     border-radius: 100%;
     font-size: 0.95em;
+  }
+  .nav-right ul .contactus-li{
+    min-width: 80px;
+  }
+  .nav-right ul  .aboutus-li{
+    min-width: 80px;
   }
   .nav-right ul li:hover{
     background-color:rgb(103, 132, 226);
