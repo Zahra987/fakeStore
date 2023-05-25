@@ -1,7 +1,25 @@
 import React from 'react'
+import './cards.css'
+import Card from '../card/Card'
 
 export default function Cards() {
   return (
-    <div>Cards</div>
+    <div className='cards'>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+    </div>
   )
 }

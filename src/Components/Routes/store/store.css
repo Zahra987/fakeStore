@@ -1,0 +1,38 @@
+.search-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+.filters{
+  background-color:rgb(25, 118, 210);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.search{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.search label{
+  position: absolute;
+  color: rgb(25, 118, 210);
+  display: none;
+}
+.search input{
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: inherit;
+  padding: 8px 0px;
+  width: 200px;
+  outline: none;
+  font-size: 1.1em;
+}
+.cards-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
