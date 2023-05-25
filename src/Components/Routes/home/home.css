@@ -39,9 +39,11 @@
 .Suggestions-home{
   width: 100vw;
   height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
 }
-
-.how-to-post-home, .Suggestions-home{
+.how-to-post-home{
   width: 100vw;
   height: 500px;
   background-color: rgb(233, 197, 80);
