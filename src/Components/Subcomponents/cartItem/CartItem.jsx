@@ -10,8 +10,8 @@ export default function CartItem() {
         <div className='cartItem'>
           <div className='img-box'><img src={img1} alt="image"/></div>
           <div className='product-name-price'>
-            <div>menfgfgf</div>
-            <div>100.95 $</div>
+            <div className='product-name'>menfgfgf</div>
+            <div className='price' >100.95 $</div>
           </div>
           <div className='number'>33</div>
           <div className='counter'>

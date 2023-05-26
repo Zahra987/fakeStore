@@ -25,11 +25,17 @@
 }
 .product-name-price{
   flex: 4;
-  height:80%;
+  height:70%;
   display:flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.product-name-price .product-name{
+  color: blue;
+}
+.product-name-price .price{
+  color: green;
 }
 .cartItem .counter{
   flex:3;

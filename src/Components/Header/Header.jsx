@@ -24,14 +24,14 @@ export default function Header() {
       <nav className='nav-right close' ref={navRightRef}>
         <ul>
           <li id='close-x'><span onClick={handleClick}>X</span></li>
-          <NavLink style={({isActive}) =>{return {backgroundColor:isActive?"rgb(103,132,226)":"inherit"}}} to='/'><li><AiOutlineHome/><span>HOME</span></li></NavLink>
-          <NavLink style={({isActive}) =>{return {backgroundColor:isActive?"rgb(103,132,226)":"inherit"}}} to='/store'><li><FaStoreAlt/><span>STORE</span></li></NavLink>
-          <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"inherit"}}} to='/cart'><li><AiOutlineShoppingCart/><span>CART</span></li></NavLink>
-          <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"inherit"}}} to='/orders'><li><AiOutlineUnorderedList/><span>ORDERS</span></li></NavLink>
-          <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"inherit"}}} to='/saved'><li><HiOutlineSave/><span>SAVED</span></li></NavLink>
-          <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"inherit"}}} to='/aboutus'><li className='aboutus-li'><FcAbout/><span>ABOUTUS</span></li></NavLink>
-          <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"inherit"}}} to='/contactus'><li className='contactus-li'><MdConnectWithoutContact/><span>CONTACTUS</span></li></NavLink>
-          <NavLink style={({isActive}) =>{return {backgroundColor: isActive?"rgb(103,132,226)":"inherit"}}} to='/login'><li><MdLogin/><span>LOGIN</span></li></NavLink>
+          <NavLink style={({isActive}) =>{return {color:isActive?"blue":"black"}}} to='/'><li><AiOutlineHome/><span>HOME</span></li></NavLink>
+          <NavLink style={({isActive}) =>{return {color:isActive?"blue":"black"}}} to='/store'><li><FaStoreAlt/><span>STORE</span></li></NavLink>
+          <NavLink style={({isActive}) =>{return {color: isActive?"blue":"black"}}} to='/cart'><li><AiOutlineShoppingCart/><span>CART</span></li></NavLink>
+          <NavLink style={({isActive}) =>{return {color: isActive?"blue":"black"}}} to='/orders'><li><AiOutlineUnorderedList/><span>ORDERS</span></li></NavLink>
+          <NavLink style={({isActive}) =>{return {color: isActive?"blue":"black"}}} to='/saved'><li><HiOutlineSave/><span>SAVED</span></li></NavLink>
+          <NavLink style={({isActive}) =>{return {color: isActive?"blue":"black"}}} to='/aboutus'><li className='aboutus-li'><FcAbout/><span>ABOUTUS</span></li></NavLink>
+          <NavLink style={({isActive}) =>{return {color: isActive?"blue":"black"}}} to='/contactus'><li className='contactus-li'><MdConnectWithoutContact/><span>CONTACTUS</span></li></NavLink>
+          <NavLink style={({isActive}) =>{return {color: isActive?"blue":"black"}}} to='/login'><li><MdLogin/><span>LOGIN</span></li></NavLink>
         </ul>
       </nav>
     </header>
