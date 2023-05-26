@@ -18,8 +18,11 @@ export default function Home() {
               menswear</p>
           </section>
         </div>
-        <section className='Suggestions-home'>
+        <section className='suggestions-home'>
+        <h2>suggestions</h2>
+        <div className='slider'>
           <Slider/>
+        </div>
         </section>
         <section className='how-to-post-home'>
           <div className='how-to-post-home-text'>

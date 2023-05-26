@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.img-box{
+.card .img-box{
   flex: 5;
 }
 .product-name{
@@ -55,12 +55,11 @@
   display: flex;
   justify-content:center;
   align-items:center;
+  width: 25px;
+  height: 25px;
 }
 .number{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  width:27px;
+  width:30px;
 }
 /* class hidden for add to cart and counter  */
 .addtocart-counter-hidden{

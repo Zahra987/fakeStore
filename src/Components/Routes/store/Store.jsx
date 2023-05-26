@@ -4,7 +4,7 @@ import {AiTwotoneFilter} from 'react-icons/ai'
 import Cards from '../../Subcomponents/cards/Cards'
 export default function Store() {
   return (
-    <div className='home-container'>
+    <div className='store-container'>
       <div className='search-container'>
         <div className='filters'>
           <span>Filters</span>
@@ -15,9 +15,7 @@ export default function Store() {
           <input placeholder='Search' />
         </div>
       </div>
-      <div className='cards-container'>
-       <Cards/>
-      </div>
+      <Cards/>
     </div>
   )
 }

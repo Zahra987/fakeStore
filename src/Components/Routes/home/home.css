@@ -36,9 +36,18 @@
   text-align:justify;
   line-height: 25px;
 }
-.Suggestions-home{
+.suggestions-home{
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.suggestions-home h2{
+  padding-top: 15px;
+}
+.slider{
   width: 100vw;
-  height: 500px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items:center;
