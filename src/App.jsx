@@ -7,7 +7,7 @@ import Orders from './Components/Routes/orders/Orders'
 import Saved from './Components/Routes/saved/Saved'
 import AboutUs from './Components/Routes/aboutUs/AboutUs'
 import ContactUs from './Components/Routes/contactUs/ContactUs'
-import Login from './Components/Routes/login/Login'
+import LoginSignup from './Components/Routes/loginSignup/LoginSignup'
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 
@@ -25,7 +25,7 @@ function App() {
         <Route path='/saved' element={<Saved/>} />
         <Route path='/aboutus' element={<AboutUs/>} />
         <Route path='/contactus' element={<ContactUs/>} />
-        <Route path='/login' element={<Login/>} />
+        <Route path='/login' element={<LoginSignup/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>
