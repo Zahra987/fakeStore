@@ -1,18 +1,19 @@
 import React from 'react'
 import './card.css'
-import img1 from '../../../assets/images/store-img1.jpg'
 import {BsBookmarkStar} from 'react-icons/bs'
 import {MdOutlineAddBox} from 'react-icons/md'
 import {VscDiffRemoved} from 'react-icons/vsc'
-export default function Card() {
+
+export default function Card({product}) {
+  
   return (
     <div className='card-container'>
       <div className='card-box'>
         <div className='card'>
-          <div className='img-box'><img src={img1} alt='img1'/></div>
-          <div className='product-name'>productName</div>
+          <div className='img-box'><img src={product.image} alt='img1'/></div>
+          <div className='product-name'>{product.category}</div>
           <div className='price-save-container'>
-            <div className='price'>109.9 $</div>
+            <div className='price'>{product.price} $</div>
             <div className='save'><BsBookmarkStar/></div>
           </div>
           <div className='details-addtocart'>
