@@ -19,9 +19,9 @@ export default function Card({product}) {
           <div className='details-addtocart'>
             <div className='details'>details</div>
             <div className='add-to-cart'>Add to cart</div>
-            <div className='counter addtocart-counter-hidden'>
+            <div className='counter'>
               <div className='decrease'><VscDiffRemoved/></div>
-              <div className='number'>1</div>
+              <div className='number'>55</div>
               <div className='increase'><MdOutlineAddBox/></div>
             </div>
           </div>
