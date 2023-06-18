@@ -1,59 +1,77 @@
+
 .cartItem-container{
-  display: flex;
+  width:400px;
+  height:150px;
+  display:flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
- ;
+  padding:15px;
 }
 .cartItem-box{
-  background-color: rgb(235, 237, 237);
-  border-radius: 5px;
-  width: 400px;
+  width:100%;
+  height:100%;
+  background-color: rgb(239, 240, 240);
+  padding:15px;
+  border-radius: 7px;
 }
 .cartItem{
-  padding: 15px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display:flex;
+  height:100%;
 }
-.cartItem .img-box{
-  flex:6;
-  display: flex;
-  justify-content: center;
+.img-box{
+  width: 35%;
+  display:flex;
+  justify-content:center;
   align-items: center;
+  position: relative;
+}
+.img-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 7px;
 }
 .product-name-price{
-  flex: 4;
-  height:70%;
+  width:40%;
   display:flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content:center;
   align-items: center;
+  padding:15px;
 }
 .product-name-price .product-name{
-  color: blue;
+  display:flex;
+  justify-content:center;
+  align-items: start;
 }
 .product-name-price .price{
-  color: green;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  color:green;
 }
-.cartItem .counter{
-  flex:3;
+.number{
+  width: 10%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  color:blue;
 }
-.cartItem .number{
-  background-color:orange;
-  height:30px;
-  border-radius: 5px;
+.counter{
+  width: 15%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .cartItem-box{
-    width: 500px;
+  .cartItem-container{
+    width:600px;
+    height:200px;
+  }
+  .product-name-price{
+    padding:25px;
   }
 } 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
-
-

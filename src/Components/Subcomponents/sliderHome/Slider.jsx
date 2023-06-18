@@ -22,7 +22,7 @@ export default function Slider() {
     onSwiper={(swiper) => console.log(swiper)}
   >
     {suggestonsProducts.map((item,i) => 
-      <SwiperSlide><Card product={item} key={i*2-1} /></SwiperSlide>
+      <SwiperSlide><Card product={item} key={i} /></SwiperSlide>
     )}
     </Swiper>
   )
