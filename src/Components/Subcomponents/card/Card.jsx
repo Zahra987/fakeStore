@@ -5,7 +5,7 @@ import {MdOutlineAddBox} from 'react-icons/md'
 import {VscDiffRemoved} from 'react-icons/vsc'
 
 export default function Card({product}) {
-  
+  console.log(product);
   return (
     <div className='card-container'>
       <div className='card-box'>

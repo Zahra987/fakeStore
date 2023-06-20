@@ -4,7 +4,7 @@ import Cards from '../../Subcomponents/cards/Cards'
 export default function Saved() {
   return (
    <>
-    <Cards/>
+    <Cards storeProducts={[{id:1,category:"men's clothing",image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"}]}/>
    </>
   )
 }
