@@ -1,10 +1,14 @@
 import React from 'react'
 import './saved.css'
 import Cards from '../../Subcomponents/cards/Cards'
+import { useSelector } from 'react-redux'
 export default function Saved() {
+
+  const savedProducts=useSelector(state => state.saveProductsReducer);
+  console.log(savedProducts);
   return (
    <>
-    <Cards storeProducts={[{id:1,category:"men's clothing",image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"}]}/>
+    <Cards products={savedProducts}/>
    </>
   )
 }

@@ -75,11 +75,10 @@
   cursor: pointer;
 }
 .card-container .card-box .card .details-addtocart .counter{
+  flex: 1;
   display: flex;
   justify-content:flex-end;
   align-items:center;
-  flex: 1;
-  display:none;
 }
 .card-container .card-box .card .details-addtocart .counter .number{
   display: flex;
@@ -90,16 +89,20 @@
 }
 .card-container .card-box .card .details-addtocart .add-to-cart{
   flex: 1;
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  background-color:rgb(45, 45, 251);
+  background-color:rgb(45, 45, 197);
   color: rgb(255, 255, 255);
   border-radius: 7px;
-  padding: 4px 0px;
+  padding: 4px 0px ;
+  text-align: center;
   transition: all 0.3s linear;
   cursor: pointer;
 }
 .card-container .card-box .card .details-addtocart .add-to-cart:hover{
-  background-color:rgb(7, 56, 190);
+  background-color:rgb(38, 95, 254);
+}
+.element-display{
+  display:none !important;
+}
+.saved-element-color{
+  color: red;
 }

@@ -27,7 +27,7 @@ export default function Store() {
           <input placeholder='Search' />
         </div>
       </div>
-      <Cards storeProducts={storeProducts}/>
+      <Cards products={storeProducts}/>
     </div>
   )
 }
