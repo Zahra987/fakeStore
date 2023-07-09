@@ -3,6 +3,7 @@ import './card.css'
 import {BsBookmarkStar} from 'react-icons/bs'
 import {MdOutlineAddBox} from 'react-icons/md'
 import {VscDiffRemoved} from 'react-icons/vsc'
+import {RiDeleteBinLine} from 'react-icons/ri'
 import { useDispatch,useSelector } from 'react-redux'
 import {addToCartSuccess,saveProducts,unSaveProducts, increasePurchases, decreasePurchases} from '../../../redux/actions'
 
@@ -81,7 +82,7 @@ export default function Card({product}) {
                     }
                     dispatch(decreasePurchases(id,cart[0].numberOfPurchases))
                   }} 
-               ><VscDiffRemoved/></div>
+               >{cart.length > 0 && cart[0].numberOfPurchases == 1 ?<RiDeleteBinLine/> :<VscDiffRemoved/>}</div>
               <div className='number'>{ cart.length > 0 ? cart[0].numberOfPurchases : 0 }</div>
               <div className='increase' onClick={()=>{dispatch(increasePurchases(id))}}><MdOutlineAddBox/></div>
             </div>
