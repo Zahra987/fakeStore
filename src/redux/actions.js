@@ -56,3 +56,55 @@ export const decreasePurchases= (id, num)=> (
     }
   }
 )
+
+
+export const DECREASE_TOTAL_PURCHASES="DECREASE_TOTAL_PURCHASES"
+export const decreaseTotalPurchases= (price) => (
+  {
+    type:DECREASE_TOTAL_PURCHASES,
+    payload:{price}
+  }
+)
+
+export const INCREASE_TOTAL_PURCHASES="INCREASE_TOTAL_PURCHASES"
+export const increaseTotalPurchases= (price) => (
+  {
+    type:INCREASE_TOTAL_PURCHASES,
+    payload:{price}
+  }
+)
+
+export const CLEAR_CART="CLEAR_CART"
+export const clearCart= ()=> (
+  {
+    type:CLEAR_CART
+  }
+)
+
+export const CLEAR_TOTAL_PURCHASES='CLEAR_TOTAL_PURCHASES'
+export const clearTotalPurchases= ()=> (
+  {
+    type: CLEAR_TOTAL_PURCHASES
+  }
+)
+
+export const DECREASE_TOTAL_ITEMS="DECREASE_TOTAL_ITEMS"
+export const decreaseTotalItems= () => (
+  {
+    type:DECREASE_TOTAL_ITEMS
+  }
+)
+
+export const INCREASE_TOTAL_ITEMS="INCREASE_TOTAL_ITEMS"
+export const increaseTotalItems= () => (
+  {
+    type:INCREASE_TOTAL_ITEMS
+  }
+)
+
+export const CLEAR_TOTAL_ITEMS="CLEAR_TOTAL_ITEMS"
+export const clearTotalItems= () => (
+  {
+    type:CLEAR_TOTAL_ITEMS
+  }
+)

@@ -4,7 +4,7 @@ import {MdOutlineAddBox} from 'react-icons/md'
 import {VscDiffRemoved} from 'react-icons/vsc'
 import {RiDeleteBinLine} from 'react-icons/ri'
 import { useDispatch } from 'react-redux';
-import {increasePurchases, decreasePurchases} from '../../../redux/actions'
+import {increasePurchases, decreasePurchases, decreaseTotalPurchases, increaseTotalPurchases,decreaseTotalItems,increaseTotalItems} from '../../../redux/actions'
 
 export default function CartItem({product}) {
   const {purchase, numberOfPurchases}= product;
@@ -24,10 +24,18 @@ export default function CartItem({product}) {
           <div className='number'>{numberOfPurchases}</div>
           <div className='counter'>
             <div className='decrease' 
-                 onClick={()=>{dispatch(decreasePurchases(id,numberOfPurchases))}} 
+                 onClick={()=>{
+                  dispatch(decreasePurchases(id,numberOfPurchases))
+                  dispatch(decreaseTotalPurchases(purchase.price))
+                  dispatch(decreaseTotalItems())
+                }} 
             >{numberOfPurchases == 1 ?<RiDeleteBinLine/> :<VscDiffRemoved/>}</div>
             <div className='increase' 
-                 onClick={()=>{dispatch(increasePurchases(id))}} 
+                 onClick={()=>{
+                  dispatch(increasePurchases(id))
+                  dispatch(increaseTotalPurchases(purchase.price))
+                  dispatch(increaseTotalItems())
+                }} 
             ><MdOutlineAddBox/></div>
           </div>
         </div>

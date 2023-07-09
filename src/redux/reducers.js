@@ -1,4 +1,9 @@
-import {LOAD_STORE_PRODUCTS_SUCCESS, LOAD_SUGGESTIONS_PRODUCTS_SUCCESS,ADD_TO_CART_SUCCESS,SAVE_PRODUCTS_SUCCESS,UNSAVE_PRODUCTS_SUCCESS, INCREASE_PURCHASES, DECREASE_PURCHASES} from './actions'
+import {LOAD_STORE_PRODUCTS_SUCCESS, LOAD_SUGGESTIONS_PRODUCTS_SUCCESS,
+        ADD_TO_CART_SUCCESS,SAVE_PRODUCTS_SUCCESS,UNSAVE_PRODUCTS_SUCCESS, 
+        INCREASE_PURCHASES, DECREASE_PURCHASES,DECREASE_TOTAL_PURCHASES,
+        INCREASE_TOTAL_PURCHASES,CLEAR_CART, CLEAR_TOTAL_PURCHASES, 
+        DECREASE_TOTAL_ITEMS,INCREASE_TOTAL_ITEMS, CLEAR_TOTAL_ITEMS
+       } from './actions'
 
 export const storeProductsReducer= (state=[], action) =>
 { 
@@ -58,13 +63,15 @@ export const cartReducer= (state=[], action) =>
         }else return item;
       })
     }
+    case CLEAR_CART:{
+      return []
+    }
     default:
       return state;
   }
 }
 
-export const saveProductsReducer= (state=[], action) =>
-{ 
+export const saveProductsReducer= (state=[], action) =>{ 
   const {type, payload}= action;
   switch (type) {
     case SAVE_PRODUCTS_SUCCESS:
@@ -78,3 +85,36 @@ export const saveProductsReducer= (state=[], action) =>
   }
 }
 
+export const totalPurchasesReducer =(state=0 , action) =>{
+  const {type, payload}= action;
+  switch (type) {
+    case DECREASE_TOTAL_PURCHASES:{
+      return state - payload.price
+    }
+    case INCREASE_TOTAL_PURCHASES:{
+      return state + payload.price
+    }
+    case CLEAR_TOTAL_PURCHASES:{
+      return 0
+    }
+    default:
+      return state
+  }
+}
+
+export const totalItemsReducer =(state=0 , action) =>{
+  const {type}= action;
+  switch (type) {
+    case DECREASE_TOTAL_ITEMS:{
+      return state - 1
+    }
+    case INCREASE_TOTAL_ITEMS:{
+      return state + 1
+    }
+    case CLEAR_TOTAL_ITEMS:{
+      return 0
+    }
+    default:
+      return state
+  }
+}

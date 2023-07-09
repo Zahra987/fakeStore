@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import './header.css'
-import {Link, NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import {AiOutlineHome} from 'react-icons/ai'
 import {FaStoreAlt} from 'react-icons/fa'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
@@ -10,6 +10,7 @@ import {FcAbout} from 'react-icons/fc'
 import {MdConnectWithoutContact} from 'react-icons/md'
 import {MdLogin} from 'react-icons/md'
 import {RxHamburgerMenu} from 'react-icons/rx'
+import {BsInfoSquare} from 'react-icons/bs'
 export default function Header() {
   const navRightRef=useRef();
   const handleClick=() =>{
@@ -29,7 +30,7 @@ export default function Header() {
           <NavLink style={({isActive}) =>{return {color: isActive?"blue":"black"}}} to='/cart'><li><AiOutlineShoppingCart/><span>CART</span></li></NavLink>
           <NavLink style={({isActive}) =>{return {color: isActive?"blue":"black"}}} to='/orders'><li><AiOutlineUnorderedList/><span>ORDERS</span></li></NavLink>
           <NavLink style={({isActive}) =>{return {color: isActive?"blue":"black"}}} to='/saved'><li><HiOutlineSave/><span>SAVED</span></li></NavLink>
-          <NavLink style={({isActive}) =>{return {color: isActive?"blue":"black"}}} to='/aboutus'><li className='aboutus-li'><FcAbout/><span>ABOUTUS</span></li></NavLink>
+          <NavLink style={({isActive}) =>{return {color: isActive?"blue":"black"}}} to='/aboutus'><li className='aboutus-li'><BsInfoSquare/><span>ABOUTUS</span></li></NavLink>
           <NavLink style={({isActive}) =>{return {color: isActive?"blue":"black"}}} to='/contactus'><li className='contactus-li'><MdConnectWithoutContact/><span>CONTACTUS</span></li></NavLink>
           <NavLink style={({isActive}) =>{return {color: isActive?"blue":"black"}}} to='/login'><li><MdLogin/><span>LOGIN</span></li></NavLink>
         </ul>
