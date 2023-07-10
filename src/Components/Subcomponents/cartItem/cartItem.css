@@ -37,7 +37,7 @@
   border-radius: 7px;
   transition: all 0.3s linear;
 }
-.cartItem-container .cartItem-box .cartItem .img-box img:hover{
+.cartItem-container .cartItem-box .cartItem:hover .img-box img{
   width: 100%;
   height: 100%;
 }

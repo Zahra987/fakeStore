@@ -40,7 +40,7 @@
   transition: all 0.3s linear;
   cursor: pointer;
 }
-.card-container .card-box .card .img-box img:hover{
+.card-container .card-box .card:hover .img-box img{
   width: 95%;
   height: 95%;
 }

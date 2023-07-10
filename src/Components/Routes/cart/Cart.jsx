@@ -14,7 +14,7 @@ export default function Cart() {
       <div className='information-cart'>
         <div className='total'>
           <div className='total-items'>Total items: <span>{totalItems}</span></div>
-          <div className='total-payments'>Total payments: <span>{totalPayments} $</span></div>
+          <div className='total-payments'>Total payments: <span>{totalPayments ? totalPayments.toFixed(2) : 0} $</span></div>
         </div>
         <div className='clear-continue-container'>
           <div className='clear-btn' 

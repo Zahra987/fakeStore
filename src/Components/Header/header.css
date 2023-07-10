@@ -71,18 +71,12 @@
     justify-content:center;
     align-items:center;
     height:80px;
-    min-width: 60px;
-    border-radius: 100%;
     font-size: 0.95em;
-  }
-  .nav-right ul .contactus-li{
-    min-width: 80px;
-  }
-  .nav-right ul  .aboutus-li{
-    min-width: 80px;
+    margin-right: 12px;
   }
   .nav-right ul li:hover{
-    background-color:rgb(103, 132, 226);
+   background-color: inherit;
+   color: blue;
   }
   .nav-right{
     display:contents;
@@ -98,9 +92,13 @@
     align-items:center;
     margin-right: 20px;
    }
+   .nav-right ul a{
+    height: 80px;
+    background-color: inherit;
+   }
    .nav-right ul li span{
     font-size: 0.85em;
-    padding: 0;
+    margin-top: 4px;
   }
   .hidden{
     display: none;
